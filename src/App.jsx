@@ -44,24 +44,30 @@ function App() {
             <h2>Projects</h2>
             <ul>
               <li>Todo App – A simple task manager built with HTML, CSS, and JavaScript.</li>
+              <li>Portfolio Website – This personal website to showcase my work and skills.</li>
               <li>Weather Forecast App – Get real-time weather updates using a public API.</li>
               <li>Portfolio Website – This personal website to showcase my work and skills.</li>
+              <li>Music Genre Recognition – A machine learning model that predicts the genre of a song based on its audio features.</li>
             </ul>
           </section>
           <section id="skills">
             <h2>Skills</h2>
             <ul>
               <li>HTML, CSS, JavaScript</li>
+              <li>C, C++</li>
+              <li>Java</li>
               <li>React</li>
               <li>Git & GitHub</li>
               <li>Python (basics)</li>
               <li>Problem Solving</li>
+              <li>Data Structures and Algorithms (Basics)</li>
+              
             </ul>
           </section>
           <section id="contact">
             <h2>Contact</h2>
             <p>Email: roshan.kumar@email.com</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+            <p><a href="https://github.com/rosh-an-n" target="_blank">Github Profile</a></p>
           </section>
         </main>
       </div>
