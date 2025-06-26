@@ -17,6 +17,7 @@ function TypingEffect({ text, speed = 120 }) {
 
 function App() {
   return (
+<<<<<<< HEAD
     <div className="layout">
       <aside className="sidebar">
         <div className="sidebar-title">RN</div>
@@ -28,12 +29,29 @@ function App() {
         </nav>
       </aside>
       <div className="main-content">
+=======
+    <>
+      <div>
+>>>>>>> 0176f8046ac1d1da94a6f859f6b9d28b22b418a1
         <section className="hero">
           <h2>Hello, I'm <TypingEffect text="Roshan Naik" speed={120} /></h2>
           <p className="hero-sub">I am a passionate Front End Developer crafting beautiful and responsive web experiences.</p>
           <p className="hero-desc">Currently a 2nd year BTech CSE student. I love building interactive UIs, exploring new web technologies, and turning ideas into reality. Experienced in React, JavaScript, and modern CSS. Always eager to learn and collaborate on exciting projects.</p>
         </section>
+<<<<<<< HEAD
         <main className="grid-sections">
+=======
+        <header>
+          <h1>Roshan Naik</h1>
+          <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
+        <main>
+>>>>>>> 0176f8046ac1d1da94a6f859f6b9d28b22b418a1
           <section id="about">
             <h2>About Me</h2>
             <p>
@@ -61,6 +79,10 @@ function App() {
               <li>Python (basics)</li>
               <li>Problem Solving</li>
               <li>Data Structures and Algorithms (Basics)</li>
+<<<<<<< HEAD
+=======
+              
+>>>>>>> 0176f8046ac1d1da94a6f859f6b9d28b22b418a1
             </ul>
           </section>
           <section id="contact">
@@ -69,11 +91,16 @@ function App() {
             <p><a href="https://github.com/rosh-an-n" target="_blank">Github Profile</a></p>
           </section>
         </main>
+<<<<<<< HEAD
         <footer>
           &copy; {new Date().getFullYear()} Roshan Naik &mdash; Crafted with passion using React.
         </footer>
       </div>
     </div>
+=======
+      </div>
+    </>
+>>>>>>> 0176f8046ac1d1da94a6f859f6b9d28b22b418a1
   );
 }
 

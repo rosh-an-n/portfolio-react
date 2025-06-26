@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* --- Modern Portfolio Redesign: Light & Vibrant Theme --- */
 
 body {
@@ -63,11 +64,69 @@ nav a:hover, nav a:focus {
   background: linear-gradient(90deg, #4f8cff 60%, #a259ff 100%);
   color: #fff;
   box-shadow: 0 2px 12px #a5b4fc44;
+=======
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #18181b;
+  color: #f3f4f6;
+  min-height: 100vh;
+  position: relative;
+}
+
+#root, #root > * {
+  position: relative;
+  z-index: 1;
+>>>>>>> 0176f8046ac1d1da94a6f859f6b9d28b22b418a1
 }
 
 .hero {
   max-width: 700px;
   margin: 3.5rem auto 2rem auto;
+<<<<<<< HEAD
   padding: 2.7rem 2.2rem 2.2rem 2.2rem;
   background: rgba(255,255,255,0.95);
   border-radius: 28px;
@@ -94,6 +153,24 @@ nav a:hover, nav a:focus {
   letter-spacing: 1px;
   position: relative;
   z-index: 1;
+=======
+  padding: 2.5rem 2rem 2rem 2rem;
+  background: rgba(24, 24, 27, 0.92);
+  border-radius: 22px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.22);
+  border: 2px solid #4f8cff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+  color: #f3f4f6;
+  letter-spacing: 1px;
+>>>>>>> 0176f8046ac1d1da94a6f859f6b9d28b22b418a1
 }
 
 .typing-effect {
@@ -101,8 +178,11 @@ nav a:hover, nav a:focus {
   border-right: 2px solid #4f8cff;
   padding-right: 4px;
   animation: blink 1s steps(1) infinite;
+<<<<<<< HEAD
   font-weight: 900;
   font-size: 2.1rem;
+=======
+>>>>>>> 0176f8046ac1d1da94a6f859f6b9d28b22b418a1
 }
 
 @keyframes blink {
@@ -112,6 +192,7 @@ nav a:hover, nav a:focus {
 
 .hero-sub {
   font-size: 1.25rem;
+<<<<<<< HEAD
   color: #6366f1;
   margin-bottom: 0.7rem;
   font-weight: 500;
@@ -132,6 +213,64 @@ main {
   box-shadow: 0 6px 32px rgba(79,140,255,0.10);
   padding: 2.7rem 2.2rem;
   border: 2px solid #a5b4fc;
+=======
+  color: #a1a1aa;
+  margin-bottom: 0.7rem;
+}
+
+.hero-desc {
+  font-size: 1.05rem;
+  color: #c7d0e0;
+  margin-bottom: 0;
+}
+
+header {
+  background: #232336cc;
+  color: #f3f4f6;
+  padding: 2.5rem 0 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  border-bottom: 1px solid #313144;
+  z-index: 2;
+  position: relative;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+nav {
+  margin-bottom: 1rem;
+}
+
+nav a {
+  color: #f3f4f6;
+  text-decoration: none;
+  margin: 0 1.2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background: #4f8cff22;
+  color: #4f8cff;
+}
+
+main {
+  max-width: 700px;
+  margin: 2.5rem auto;
+  background: #232336ee;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  padding: 2.5rem 2rem;
+  border: 1.5px solid #313144;
+>>>>>>> 0176f8046ac1d1da94a6f859f6b9d28b22b418a1
   animation: fadeIn 1.2s;
   z-index: 2;
   position: relative;
@@ -144,6 +283,7 @@ main {
 
 section {
   margin-bottom: 2.7rem;
+<<<<<<< HEAD
   border-radius: 16px;
   background: rgba(244,246,255,0.92);
   box-shadow: 0 2px 16px rgba(79,140,255,0.06);
@@ -173,11 +313,46 @@ li {
   font-size: 1.08rem;
   font-weight: 500;
 }
+=======
+  border-radius: 12px;
+  background: #232336cc;
+  box-shadow: 0 2px 12px rgba(79,140,255,0.04);
+  padding: 1.5rem 1.2rem;
+  border: 1px solid #313144;
+  transition: box-shadow 0.2s, border 0.2s;
+  z-index: 2;
+  position: relative;
+}
+
+section:hover {
+  box-shadow: 0 4px 24px rgba(79,140,255,0.10);
+  border: 1.5px solid #4f8cff;
+}
+
+section h2 {
+  color: #4f8cff;
+  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: #a1a1aa;
+  font-size: 1.05rem;
+}
+
+>>>>>>> 0176f8046ac1d1da94a6f859f6b9d28b22b418a1
 a {
   color: #4f8cff;
   text-decoration: underline;
   transition: color 0.2s;
 }
+<<<<<<< HEAD
 a:hover {
   color: #fff;
   background: #4f8cff;
@@ -196,6 +371,13 @@ footer {
   font-size: 1.05rem;
   border-radius: 18px 18px 0 0;
   box-shadow: 0 -2px 16px rgba(79,140,255,0.08);
+=======
+
+a:hover {
+  color: #f3f4f6;
+  background: #4f8cff44;
+  border-radius: 4px;
+>>>>>>> 0176f8046ac1d1da94a6f859f6b9d28b22b418a1
 }
 
 @media (max-width: 800px) {
@@ -216,6 +398,7 @@ footer {
     font-size: 2rem;
   }
 }
+<<<<<<< HEAD
 
 /* --- Layout & Sidebar Styles --- */
 .layout {
@@ -327,3 +510,5 @@ footer {
     gap: 1.5rem;
   }
 }
+=======
+>>>>>>> 0176f8046ac1d1da94a6f859f6b9d28b22b418a1
