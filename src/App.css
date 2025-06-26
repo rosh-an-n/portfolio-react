@@ -1,0 +1,329 @@
+/* --- Modern Portfolio Redesign: Light & Vibrant Theme --- */
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  color: #232336;
+  min-height: 100vh;
+  position: relative;
+  letter-spacing: 0.01em;
+}
+
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 0 1.5rem;
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 24px rgba(79, 140, 255, 0.08);
+  border-bottom: 2px solid #a5b4fc;
+  padding: 1.5rem 0 1rem 0;
+  margin-bottom: 2rem;
+  border-radius: 0 0 18px 18px;
+  transition: background 0.3s;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #4f8cff 30%, #a259ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+nav {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #232336;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.08rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+nav a:hover, nav a:focus {
+  background: linear-gradient(90deg, #4f8cff 60%, #a259ff 100%);
+  color: #fff;
+  box-shadow: 0 2px 12px #a5b4fc44;
+}
+
+.hero {
+  max-width: 700px;
+  margin: 3.5rem auto 2rem auto;
+  padding: 2.7rem 2.2rem 2.2rem 2.2rem;
+  background: rgba(255,255,255,0.95);
+  border-radius: 28px;
+  box-shadow: 0 8px 40px rgba(79,140,255,0.10);
+  border: 2.5px solid #a5b4fc;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.hero:before {
+  content: '';
+  position: absolute;
+  top: -60px; left: -60px;
+  width: 180px; height: 180px;
+  background: radial-gradient(circle, #a5b4fc55 0%, transparent 80%);
+  z-index: 0;
+}
+.hero h2 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 1.1rem;
+  color: #232336;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+}
+
+.typing-effect {
+  color: #4f8cff;
+  border-right: 2px solid #4f8cff;
+  padding-right: 4px;
+  animation: blink 1s steps(1) infinite;
+  font-weight: 900;
+  font-size: 2.1rem;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: #4f8cff; }
+  50% { border-color: transparent; }
+}
+
+.hero-sub {
+  font-size: 1.25rem;
+  color: #6366f1;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+
+.hero-desc {
+  font-size: 1.08rem;
+  color: #6366f1;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+main {
+  max-width: 800px;
+  margin: 2.5rem auto;
+  background: rgba(255,255,255,0.98);
+  border-radius: 22px;
+  box-shadow: 0 6px 32px rgba(79,140,255,0.10);
+  padding: 2.7rem 2.2rem;
+  border: 2px solid #a5b4fc;
+  animation: fadeIn 1.2s;
+  z-index: 2;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  margin-bottom: 2.7rem;
+  border-radius: 16px;
+  background: rgba(244,246,255,0.92);
+  box-shadow: 0 2px 16px rgba(79,140,255,0.06);
+  padding: 1.7rem 1.3rem;
+  border: 1.5px solid #a5b4fc44;
+  transition: box-shadow 0.2s, border 0.2s, background 0.2s;
+  z-index: 2;
+  position: relative;
+}
+section:hover {
+  box-shadow: 0 6px 32px rgba(79,140,255,0.13);
+  border: 2px solid #a259ff;
+  background: rgba(164, 185, 255, 0.13);
+}
+section h2 {
+  color: #a259ff;
+  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+ul {
+  padding-left: 1.2rem;
+}
+li {
+  margin-bottom: 0.5rem;
+  color: #6366f1;
+  font-size: 1.08rem;
+  font-weight: 500;
+}
+a {
+  color: #4f8cff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #fff;
+  background: #4f8cff;
+  border-radius: 4px;
+}
+
+/* --- Footer --- */
+footer {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 1.5rem 0 1.2rem 0;
+  background: rgba(255,255,255,0.95);
+  border-top: 2px solid #a5b4fc;
+  text-align: center;
+  color: #6366f1;
+  font-size: 1.05rem;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 -2px 16px rgba(79,140,255,0.08);
+}
+
+@media (max-width: 800px) {
+  .hero {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+  main {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem;
+  }
+  section {
+    padding: 1rem 0.5rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+/* --- Layout & Sidebar Styles --- */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: inherit;
+}
+
+.sidebar {
+  width: 80px;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+  border-right: 2px solid #a5b4fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+  gap: 2rem;
+  box-shadow: 2px 0 16px #a5b4fc22;
+  z-index: 10;
+}
+.sidebar-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #4f8cff;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+.sidebar nav a {
+  font-size: 1.7rem;
+  color: #6366f1;
+  background: #fff;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #a5b4fc22;
+}
+.sidebar nav a:hover, .sidebar nav a:focus {
+  background: linear-gradient(90deg, #4f8cff 60%, #a259ff 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px #a5b4fc44;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.hero {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.grid-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+  margin-bottom: 2.5rem;
+}
+.grid-sections section {
+  min-width: 0;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* Responsive: Sidebar becomes top bar, grid becomes single column */
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex-direction: row;
+    width: 100%;
+    height: 64px;
+    border-right: none;
+    border-bottom: 2px solid #a5b4fc;
+    box-shadow: 0 2px 16px #a5b4fc22;
+    padding: 0 0.5rem;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .sidebar-title {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+  }
+  .sidebar nav {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .main-content {
+    padding-top: 1.5rem;
+  }
+  .grid-sections {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
